@@ -1,5 +1,6 @@
 # Git Commits
 Git messages should always be prefixed with `Add`, `Fix` or `Merge` - except for the `Initial commit`.
+Work in progress commits should be prefixed with `WIP: ` (`WIP: Add ...`)
 
 A commit message can exceed the recommended message length limit.
 
