@@ -205,6 +205,8 @@ The following names should never be used in a model and should be avoided in cod
 - object
 - instance
 - type
+- info
+- data (unless it is actually binary data)
 
 A table named `item` is not descriptive. What `item` do you mean, is it referring to a product in a e-shop database? - use `product`! An item in a shopping cart? - use `cart_item`. 
 
