@@ -19,7 +19,7 @@ Remove any debugging comments.
 
 ## Control Statements
 If conditions should be formatted with a space before and after the condition, the else should be on the same line as the closing bracket.
-```
+```ts
 // optional comment explaining why this statement is required
 if (condition) { 
 	// optional (multiline) comment explaining why the code reached this location (elaborating on the condition)
@@ -37,7 +37,7 @@ The block brackets (`{}`) are **required**. Never omit the block brackets in con
 The use of `do while` is discouraged. Use the control structure `for of` instead of the array function (`forEach`). Is your `.map? really a `.map` or a lazy for?
 
 Loops should follow the same style
-```
+```ts
 // optional comment
 for (let variable of iterator) {
 	...
@@ -54,7 +54,7 @@ Switches should be avoided whenever possible, as most use cases stem from archit
 Switches should only be used when writing protocols (with multiple serialized message-types), command line interfaces (for switching between arguments) or keyboard input handling.
 
 Adding a block (`{}`) around a case greatly increases its readability and is required.
-```
+```ts
 switch (input) {
 	case option:
 	case option: {
@@ -70,7 +70,7 @@ switch (input) {
 ```
 
 Classes are defined with the same indent:
-```
+```ts
 class Locomotive extends Vehicle {
 	...
 }
@@ -80,7 +80,7 @@ class Locomotive extends Vehicle {
 Code should be split into multiple lines when the readability suffers. 
 
 Split chained actions, split complex conditions - operator first
-```
+```ts
 await this.db.locomotives
 	.where(
 		locomotive.uicIdentifier.startsWith(uicGroup)
@@ -95,7 +95,7 @@ await this.db.locomotives
 ```
 
 Complex math operations should always have a comment. Split the expression into multiple statements or keep the expression readable by adding spaces.
-```
+```ts
 // calculates the distance traveled by the train
 // subtracts the drag coefficient from all cars in the train
 let distance = (
@@ -108,7 +108,7 @@ let distance = (
 ```
 
 Break HTML attributes when lines get long
-```
+```html
 <ui-field>
 	<input
 		id={this.fieldId}
@@ -124,7 +124,7 @@ Break HTML attributes when lines get long
 
 ## Ordering
 Ordering class makes finding code quicker
-```
+```ts
 class ClassName {
 	static shared: ClassName; // shared singletons / globals
 
@@ -158,7 +158,7 @@ Large static lists, for example a list of all colors by name in a `Color` class 
 Spacing should be used to group code.
 Groups can be commented above, items within a group may be commentated inline.
 
-```
+```ts
 class Locomotive {
 	// identifying properties
 	name: string;
@@ -211,7 +211,7 @@ The following names should never be used in a model and should be avoided in cod
 A table named `item` is not descriptive. What `item` do you mean, is it referring to a product in a e-shop database? - use `product`! An item in a shopping cart? - use `cart_item`. 
 
 This code sums up the price of all products. This took a second to figure out.
-```
+```ts
 let value = 0;
 
 for (let item of await db.product.toArray()) {
@@ -220,7 +220,7 @@ for (let item of await db.product.toArray()) {
 ```
 
 The following is preferred, as this is instantly recognizable.
-```
+```ts
 let priceSum = 0;
 
 for (let product of await db.product.toArray()) {
@@ -242,7 +242,7 @@ Classes should be split when they reach a unmanageable size. A developer should 
 
 ## Example Exceptions
 Irregular array breaking to ease the readability of parameters and their values 
-```
+```ts
 spawn([
 	'git', 'commit',
 	'-m', this.message

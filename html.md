@@ -2,7 +2,7 @@
 Documents should be indented properly.
 
 Each document should contain the following code. The `<html>` tag can be omitted. XML namespace attributes can be omitted.
-```
+```html
 <!doctype html>
 <head>
     <title></title>
@@ -20,7 +20,7 @@ CSS was added, which allowed the proper use of `<h1>` as the main heading, but a
 Applications got bigger, and developers had to add components to their pages which could not be described by html - so people started abusing `<div>`, which indicates a division/block in a page. Today, most web applications are a mess of one thousand `<div>` elements with even more classes to differentiate between them. People never even question, why each entry in their css starts with a `.`.
 
 We developed an alternative system, which allows us to write clean html, while staying standards-compliant (because we add a `-` to custom elements, thus the `ui-` prefix).
-```
+```html
 <ui-card>
     <img src="header.png" />
 
@@ -59,7 +59,7 @@ Use standard HTML elements whenever possible. Avoid `<b>` and `<i>` as they are 
 
 Try to keep the html as slim as possible. Use `<ui-title>` instead of `<ui-card-title>` in the example below. This allows the next developer to just change the `<ui-card>` to another tag if the layout should be changed (for example to a `<ui-item>` within a list)
 
-```
+```html
 <ui-card>
     <ui-title>
         Lorem Ipsum

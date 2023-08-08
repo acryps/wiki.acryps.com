@@ -26,7 +26,7 @@ Don't remove leading zeroes in numbers (use `0.5rem` instead of `.5rem`)
 When using SCSS, selectors should be nested.
 Properties should be listed before children.
 
-```
+```scss
 ui-card {
     // own styles first
     display: block;
@@ -68,7 +68,7 @@ Most CSS is not ordered, which leads to a lot of wasted development time.
 The ordering principle is based on property severity. 
 
 The severity groups should be grouped and should contain a space in between.
-```
+```scss
 ui-test {
     display: block; 
     max-height: 4rem; // width & height > margin & padding
