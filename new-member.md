@@ -9,10 +9,3 @@
 	- German - Code Spell Checker
 5. Add vpn
 6. Read wiki
-7. Introduce into acryps stack
-	- vldom
-	- vlserver
-	- vlquery
-	- vldeploy
-	- vlcluster
-	- ...
