@@ -11,7 +11,7 @@ Ordered source code makes finding stuff faster
 ## General Classes
 1. Constants (`readonly animationDuration = 2000;`)
 2. Events & Observables (`onPriceUpdate: (price: number) => void;`)
-3. Variables (`animationState: nuumber;`)
+3. Variables (`animationState: number;`)
 4. Constructor
 5. Public methods
 6. Private methods
