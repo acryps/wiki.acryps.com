@@ -24,11 +24,10 @@ Ordered source code makes finding stuff faster
 5. Variables
 6. Constructor
 7. `onload`
-8. `onunload`
+8. Public methods
 9. `render`
 10. Sub-renders (`renderGalleryItem(item: RingViewModel) ...`)
-11. Public methods
-12. Private helpers
+11. Private helpers
 
 ## Services
 Fist main (`getBook`) then different types (`getAuthors`) if a service (`BookService`) contains handlers multiple types
